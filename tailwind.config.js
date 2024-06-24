@@ -12,6 +12,12 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        "henrys-logo": "#EC3D41",
+        "henrys-background": "#f0f0e6",
+        "henrys-accent": "#666633",
+        "henrys-type": "#663333",
+      },
     },
   },
   plugins: [],
