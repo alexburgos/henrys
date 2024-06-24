@@ -13,11 +13,14 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        "henrys-logo": "#EC3D41",
-        "henrys-background": "#f0f0e6",
-        "henrys-accent": "#666633",
-        "henrys-type": "#663333",
+        "henrys": "#D2734B",
+        "henrys-beige": "#ECE8DB",
+        "henrys-green-accent": "#555939",
+        "henrys-text": "#492E2E",
       },
+      // backgroundImage: {
+      //   'diamond-pattern': "url('/public/diamonds.png')",
+      // }
     },
   },
   plugins: [],
