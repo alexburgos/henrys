@@ -1,20 +1,28 @@
 import Image from 'next/image';
 import localFont from 'next/font/local';
 
-import HenrysLogo from '../public/Henrys.png';
+import HenrysLogo from '../public/henrys.png';
+import Diamonds from '../public/diamonds.png';
 import Link from 'next/link';
 
 export default function Home() {
   return (
     <main className='flex min-h-screen flex-col items-center justify-center'>
       <Image
+        src={Diamonds}
+        alt='Diamond pattern'
+        width="auto"
+        height="auto"
+        className='mb-24 mt-16 absolute top-[-15rem] sm:top-[-20rem] md:top-[-30rem] z-0'
+      />
+      <Image
         src={HenrysLogo}
         alt='Henrys Logo'
-        width={750}
-        height={750}
-        className='mb-24'
+        width={500}
+        height={500}
+        className='mt-12 mb-12 md:mt-20 md:mb-24'
       />
-      <div className='flex flex-col sm:w-full md:w-auto md:flex-row space-y-6 md:space-y-0 md:space-x-10 text-center'>
+      <div className='flex flex-col sm:w-full md:w-auto sm:flex-row space-y-6 sm:space-y-0 sm:space-x-10 text-center'>
         <Link
           href='/food'
           className='w-56 border-2 border-henrys text-henrys-beige bg-henrys cursor-pointer hover:bg-henrys-beige hover:border-henrys hover:text-henrys'
