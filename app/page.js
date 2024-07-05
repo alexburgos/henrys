@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import localFont from 'next/font/local';
 
-import HenrysLogo from '../public/henrys.png';
+import HenrysLogo from '../public/henrys-logo.png';
 import Diamonds from '../public/diamonds.png';
 import Link from 'next/link';
 
