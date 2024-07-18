@@ -1,3 +1,4 @@
+import daisyui from "daisyui";
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -18,10 +19,7 @@ module.exports = {
         "henrys-green-accent": "#555939",
         "henrys-text": "#492E2E",
       },
-      // backgroundImage: {
-      //   'diamond-pattern': "url('/public/diamonds.png')",
-      // }
     },
   },
-  plugins: [],
+  plugins: [daisyui],
 };
