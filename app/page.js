@@ -1,11 +1,20 @@
+"use client"
 import Image from 'next/image';
-import localFont from 'next/font/local';
 
 import HenrysLogo from '../public/henrys-logo.png';
 import Diamonds from '../public/diamonds.png';
 import Link from 'next/link';
+import { useSprings, animated } from '@react-spring/web'
 
 export default function Home() {
+  const [springs, api] = useSprings(
+    2,
+    () => ({
+      from: { opacity: 0 },
+      to: { opacity: 1 },
+    }),
+    []
+  )
   return (
     <main className='flex min-h-screen flex-col items-center justify-center'>
       <Image
@@ -15,6 +24,9 @@ export default function Home() {
         height={300}
         className='absolute top-[-8rem] md:top-[-16rem] z-0'
       />
+      {/* {springs.map(props => (
+        <animated.div key={props} style={props}>Hello World</animated.div>
+      ))} */}
       <div className="flex flex-col items-center justify-center">
         <Image
           src={HenrysLogo}
