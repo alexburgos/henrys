@@ -22,6 +22,6 @@ export default function Food() {
         <path strokeLinecap='round' strokeLinejoin='round' d='M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18' />
       </svg>
     </Link>
-    < Image src={FoodMenu} alt='Drinks' width={600} height={600} onClick={handleZoom} className={`${isZoomedIn ? 'lg:cursor-zoom-out lg:scale-150' : 'lg:cursor-zoom-in lg:scale-100'} `} placeholder="blur" quality={100} />
+    < Image src={FoodMenu} alt='Drinks' width={600} height={600} onClick={handleZoom} className={`${isZoomedIn ? 'lg:cursor-zoom-out lg:scale-150' : 'lg:cursor-zoom-in lg:scale-100'} `} placeholder='blur' quality={100} />
   </main >;
 }

@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import Image from 'next/image';
 
 import HenrysLogo from '../public/henrys-logo.png';
@@ -8,7 +8,7 @@ import { useSprings, animated } from '@react-spring/web'
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-center'>
+    <main className='flex min-h-[90vh] flex-col items-center justify-center'>
       <Image
         src={Diamonds}
         alt='Diamond pattern'
@@ -16,7 +16,7 @@ export default function Home() {
         height={300}
         className='absolute top-[-8rem] md:top-[-18rem] lg:top-[-16rem] z-0'
       />
-      <div className="flex flex-col items-center justify-center">
+      <div className='flex flex-col items-center justify-center'>
         <Image
           src={HenrysLogo}
           alt='Henrys Logo'
