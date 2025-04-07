@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { useState } from 'react';
-import DrinksMenu from '../../public/bebidas.png';
+import DrinksMenu from '../../public/bebidas.webp';
 import Link from 'next/link';
 
 export default function Drinks() {
@@ -23,6 +23,17 @@ export default function Drinks() {
       </svg>
     </Link>
 
-    <Image src={DrinksMenu} alt='Drinks' width={600} height={600} className={`${isZoomedIn ? 'lg:cursor-zoom-out lg:scale-150' : 'lg:cursor-zoom-in lg:scale-100'} `} onClick={handleZoom} placeholder="blur" quality={100} />
+    <Image
+      src={DrinksMenu}
+      alt='Drinks'
+      width={600}
+      height={600}
+      className={`${isZoomedIn ? 'lg:cursor-zoom-out lg:scale-150' : 'lg:cursor-zoom-in lg:scale-100'}`}
+      onClick={handleZoom}
+      placeholder="blur"
+      quality={85}
+      priority
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+    />
   </main>;
 }

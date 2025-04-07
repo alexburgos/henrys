@@ -1,8 +1,8 @@
 'use client'
 import Image from 'next/image';
 
-import HenrysLogo from '../public/henrys-logo.png';
-import Diamonds from '../public/diamonds.png';
+import HenrysLogo from '../public/henrys-logo.webp';
+import Diamonds from '../public/diamonds.webp';
 import Link from 'next/link';
 import { useSprings, animated } from '@react-spring/web'
 
@@ -15,6 +15,9 @@ export default function Home() {
         width={650}
         height={300}
         className='absolute top-[-8rem] md:top-[-18rem] lg:top-[-16rem] z-0'
+        priority
+        quality={85}
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
       <div className='flex flex-col items-center justify-center'>
         <Image
@@ -23,6 +26,9 @@ export default function Home() {
           width={400}
           height={400}
           className='mt-12 mb-12 md:mt-20 lg:mb-28'
+          priority
+          quality={85}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         <div className='flex flex-col sm:w-full md:w-auto sm:flex-row space-y-6 sm:space-y-0 sm:space-x-10 text-center'>
           <Link

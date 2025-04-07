@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import Link from 'next/link';
-import FoodMenu from '../../public/comida.png';
+import FoodMenu from '../../public/comida.webp';
 
 export default function Food() {
   const [isZoomedIn, setZoom] = useState(false);
@@ -22,6 +22,17 @@ export default function Food() {
         <path strokeLinecap='round' strokeLinejoin='round' d='M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18' />
       </svg>
     </Link>
-    < Image src={FoodMenu} alt='Drinks' width={600} height={600} onClick={handleZoom} className={`${isZoomedIn ? 'lg:cursor-zoom-out lg:scale-150' : 'lg:cursor-zoom-in lg:scale-100'} `} placeholder='blur' quality={100} />
+    <Image
+      src={FoodMenu}
+      alt='Drinks'
+      width={600}
+      height={600}
+      onClick={handleZoom}
+      className={`${isZoomedIn ? 'lg:cursor-zoom-out lg:scale-150' : 'lg:cursor-zoom-in lg:scale-100'}`}
+      placeholder='blur'
+      quality={85}
+      priority
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+    />
   </main >;
 }
